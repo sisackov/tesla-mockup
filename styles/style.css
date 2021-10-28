@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "GothamSSm-Bold";
+  src: url("/assets/fonts/GothamSSm-Bold_Web.woff2") format("woff2");
+}
+@font-face {
+  font-family: "GothamSSm-Book";
+  src: url("/assets/fonts/GothamSSm-Book_Web.woff2") format("woff2");
+}
+@font-face {
+  font-family: "GothamSSm-Bold-Light";
+  src: url("/assets/fonts/GothamSSm-Light_Web.woff2") format("woff2");
+}
+@font-face {
+  font-family: "GothamSSm-Bold-Medium";
+  src: url("/assets/fonts/GothamSSm-Medium_Web.woff2") format("woff2");
+}
+
+button {
+  cursor: pointer;
+}
+
+.logo-container {
+  margin: auto;
+  top: 25px;
+  left: 40px;
+  width: 120px;
+  height: 70px;
+  position: fixed;
+  fill: #fff;
+  cursor: pointer;
+}
+
+.page {
+  height: 100vh;
+}
+
+.page-1 {
+  background: url("/assets/img/M3-Hero-LHD-US-D.jfif") no-repeat center
+    center/cover;
+}
+
+.container {
+  position: fixed;
+  top: 20px;
+  left: 450px; /* TODO */
+  width: 78%;
+}
+
+.navbar {
+  margin-left: auto;
+}
+
+.navbar-mid-buttons {
+  float: left;
+  width: 65%;
+}
+.navbar-right-buttons {
+  float: right;
+  width: 35%;
+}
+
+.clr {
+  margin: auto;
+}
+
+.roundbtn {
+  border-style: none;
+  border-radius: 22px;
+  border-style: none;
+
+  line-height: 21px;
+  height: 32px;
+  width: 100px;
+  background: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "GothamSSm-Bold";
+}
+
+.roundbtn:hover {
+  background-color: #334;
+  opacity: 0.45;
+  border-radius: 20px;
+}
+
+.side-btn-menu {
+  position: fixed;
+  top: 40vh;
+  left: 20px;
+  width: 50px;
+}
+.side-btn-menu li {
+  list-style: none;
+  margin-bottom: 1px;
+}
+
+.side-btn {
+  background-color: gray;
+  width: 1px;
+  height: 28px;
+  border: none;
+}
+
+.side-btn-active {
+  width: 3px;
+  height: 28px;
+  border: none;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  top: 8px;
+  height: 45px;
+  width: 80px;
+  margin-left: 10px;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+.side-btn-menu:hover .tooltip-1,
+.tooltip-1:hover {
+  display: block;
+  color: white;
+}
+/* TODO */
+#side-btn-2:hover .tooltip-2,
+.tooltip-2:hover {
+  display: block;
+  color: white;
+}
+
+.title-container {
+  position: relative;
+  text-align: center;
+  top: 150px;
+}
+
+.title-container h1 {
+  color: white;
+  font-size: 40px;
+  letter-spacing: -0.6px;
+  line-height: 48px;
+  font-family: "GothamSSm-Bold-Medium";
+}
+
+.bottom-bar {
+  display: block;
+  text-align: center;
+  margin: auto;
+  min-width: 800px;
+  margin-top: 420px;
+}
+
+.bbar-container {
+  display: inline-block;
+  position: relative;
+  fill: #fff;
+  color: white;
+  cursor: text;
+  padding: 0 30px;
+}
+
+.speed-container {
+  width: fit-content;
+}
+
+.speed-title {
+  font-family: "GothamSSm-Bold";
+}
+
+.speedometer__outer-circle {
+  margin-right: 4px;
+  height: 25px;
+  margin-inline-end: 4px;
+  overflow: hidden;
+  /* position: relative; */
+  width: 30px;
+}
+
+.order-button {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  line-height: 1.42857143;
+  border-radius: 22px;
+  border: white solid 3px;
+  color: white;
+  width: 150px;
+  height: 45px;
+}
+
+.order-button:hover {
+  background: white;
+  color: black;
+}
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+.page-2 {
+  background: url("/assets/img/model_3_safety_hero.png") no-repeat center
+    center/cover;
+}
+.page-3 {
+  background: url("/assets/img/lhd-performance-hero-desktop.jfif") no-repeat
+    center center/cover;
+  bottom: 0;
+}
+.page-4 {
+  background: url("/assets/img/lhd-awd-hero-desktop.jfif") no-repeat center
+    center/cover;
+}
