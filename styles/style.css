@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  --tcl-image-asset-block-size: 100%;
 }
 
 @font-face {
@@ -26,6 +27,7 @@ button {
 }
 
 .logo-container {
+  z-index: 9999;
   margin: auto;
   top: 25px;
   left: 40px;
@@ -41,6 +43,7 @@ button {
 }
 
 .page-1 {
+  display: none;
   background: url("/assets/img/M3-Hero-LHD-US-D.jfif") no-repeat center
     center/cover;
 }
@@ -156,7 +159,7 @@ button {
   text-align: center;
   margin: auto;
   min-width: 800px;
-  margin-top: 420px;
+  margin-top: 790px;
 }
 
 .bbar-container {
@@ -166,6 +169,10 @@ button {
   color: white;
   cursor: text;
   padding: 0 30px;
+}
+
+.bbar-container-btn {
+  margin-bottom: auto;
 }
 
 .speed-container {
@@ -229,10 +236,53 @@ button {
 
 
 */
-.page-2 {
-  background: url("/assets/img/model_3_safety_hero.png") no-repeat center
-    center/cover;
+
+/* .page-2 {
+} */
+
+.side-article {
+  float: left;
+  width: 23%;
+  height: 100vh;
+  text-align: left;
 }
+
+.img-container {
+  background: url("/assets/img/tesla_safety_hero.png") no-repeat center
+    center/cover;
+  float: right;
+  width: 77%;
+  height: 100%;
+  text-align: right;
+}
+
+.class-card {
+  overflow: visible;
+  margin: 80px 50px;
+}
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
 .page-3 {
   background: url("/assets/img/lhd-performance-hero-desktop.jfif") no-repeat
     center center/cover;
