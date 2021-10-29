@@ -14,12 +14,12 @@
   src: url("/assets/fonts/GothamSSm-Book_Web.woff2") format("woff2");
 }
 @font-face {
-  font-family: "GothamSSm-Bold-Light";
+  font-family: "GothamSSm-Light";
   src: url("/assets/fonts/GothamSSm-Light_Web.woff2") format("woff2");
 }
 @font-face {
-  font-family: "GothamSSm-Bold-Medium";
-  src: url("/assets/fonts/GothamSSm-Medium_Web.woff2") format("woff2");
+  font-family: "GothaMedium";
+  src: url("/assets/fonts/GothaMedium_Web.woff2") format("woff2");
 }
 
 button {
@@ -151,7 +151,7 @@ button {
   font-size: 40px;
   letter-spacing: -0.6px;
   line-height: 48px;
-  font-family: "GothamSSm-Bold-Medium";
+  font-family: "GothaMedium";
 }
 
 .bottom-bar {
@@ -245,6 +245,21 @@ button {
   width: 23%;
   height: 100vh;
   text-align: left;
+  line-height: 1.5em;
+}
+
+.side-article h4 {
+  font-family: "GothamSSm-Light";
+  font-weight: 100;
+}
+.side-article h2 {
+  font-family: "GothamSSm-Light";
+  font-weight: 600;
+  font-size: 26px;
+}
+.side-article p {
+  font-family: "GothamSSm-Book";
+  font-size: 14px;
 }
 
 .img-container {
@@ -258,7 +273,7 @@ button {
 
 .class-card {
   overflow: visible;
-  margin: 80px 50px;
+  margin: 60px 40px;
 }
 
 /*
