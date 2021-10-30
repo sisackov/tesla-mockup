@@ -8,6 +8,11 @@ html {
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  scroll-snap-type: y mandatory;
+}
+
 @font-face {
   font-family: "GothamSSm-Bold";
   src: url("/assets/fonts/GothamSSm-Bold_Web.woff2") format("woff2");
@@ -21,7 +26,7 @@ html {
   src: url("/assets/fonts/GothamSSm-Light_Web.woff2") format("woff2");
 }
 @font-face {
-  font-family: "GothaMedium";
+  font-family: "GothamSSm-Medium";
   src: url("/assets/fonts/GothaMedium_Web.woff2") format("woff2");
 }
 
@@ -43,10 +48,11 @@ button {
 
 .page {
   height: 100vh;
+  scroll-snap-align: start;
 }
 
 .page-1 {
-  /* display: none; TODO */
+  display: none; /* TODO */
   background: url("/assets/img/M3-Hero-LHD-US-D.jfif") no-repeat center
     center/cover;
 }
@@ -102,6 +108,7 @@ button {
   left: 20px;
   width: 50px;
 }
+
 .side-btn-menu li {
   list-style: none;
   margin-bottom: 1px;
@@ -147,52 +154,67 @@ button {
   position: relative;
   text-align: center;
   top: 150px;
+  margin-bottom: 750px;
 }
 
 .title-container h1 {
   color: white;
-  font-size: 40px;
-  letter-spacing: -0.6px;
+  font-size: 39px;
+  letter-spacing: 0.2px;
   line-height: 48px;
-  font-family: "GothaMedium";
+  font-family: "GothamSSm-Book";
 }
 
 .bottom-bar {
-  display: block;
+  display: inline-block;
   text-align: center;
-  margin: auto;
+  margin-left: 410px;
   min-width: 800px;
-  margin-top: 790px;
+  width: 400px;
 }
 
-.bbar-container {
+.callout-container {
   display: inline-block;
   position: relative;
   fill: #fff;
   color: white;
   cursor: text;
   padding: 0 30px;
+  font-family: "GothamSSm-Light";
+  font-weight: 900;
 }
 
-.bbar-container-btn {
-  margin-bottom: auto;
+.callout-container h3 {
+  font-size: 28px;
+  letter-spacing: 0.6px;
+  line-height: 1.8em;
+}
+
+.callout-container span {
+  font-size: 12px;
+  letter-spacing: 0.05em;
 }
 
 .speed-container {
-  width: fit-content;
+  float: left;
 }
 
 .speed-title {
-  font-family: "GothamSSm-Bold";
+  float: right;
+  font-size: 28px;
+  letter-spacing: 0.05em;
 }
 
-.speedometer__outer-circle {
-  margin-right: 4px;
-  height: 25px;
-  margin-inline-end: 4px;
-  overflow: hidden;
-  /* position: relative; */
-  width: 30px;
+.speedometer {
+  height: 46px;
+  width: 53px;
+}
+
+.order-button-container {
+  float: right;
+  display: block;
+  margin-left: -120px;
+  margin-top: 10px;
 }
 
 .order-button {
@@ -203,7 +225,7 @@ button {
   border: white solid 3px;
   color: white;
   width: 150px;
-  height: 45px;
+  height: 40px;
 }
 
 .order-button:hover {
@@ -211,15 +233,10 @@ button {
   color: black;
 }
 
-.order-plus-btn-container {
-  margin-bottom: auto;
-  margin-top: 65%;
-}
-
 /* Page 2 */
 
 .page-2 {
-  /* display: none;TODO */
+  /* display: none; */ /* TODO */
 }
 
 .side-article {
@@ -269,6 +286,11 @@ button {
   width: 350px;
 }
 
+.opbc-p2 {
+  margin-bottom: auto;
+  margin-top: 65%;
+}
+
 .order-plus-btn-container span {
   padding-right: 8px;
 }
@@ -300,39 +322,62 @@ button {
 }
 
 .page-3 {
+  /* display: none; */
   bottom: 0;
 }
 
 .img-container-p3 {
+  display: block;
   background: url("/assets/img/lhd-performance-hero-desktop.jfif") no-repeat
     center center/cover;
-  height: 75vh;
+  height: 73.8vh;
 }
 
-/*
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.page-4 {
-  background: url("/assets/img/lhd-awd-hero-desktop.jfif") no-repeat center
-    center/cover;
+.filler-p3-img {
+  height: 555px;
 }
-*/
+
+.callout-bar {
+  margin-left: 410px;
+  height: 300px;
+}
+
+.callout-container-p3 {
+  display: inline-block;
+  text-align: center;
+  fill: #fff;
+  color: white;
+  cursor: text;
+  padding: 0 0px;
+  font-family: "GothamSSm-Light";
+  font-weight: 900;
+  width: 300px;
+}
+
+.callout-container-p3 h3 {
+  font-size: 25px;
+  letter-spacing: 0.6px;
+  line-height: 1.8em;
+}
+
+.callout-container-p3 span {
+  font-size: 12px;
+  letter-spacing: 0.05em;
+}
+
+.speedometer-p3 {
+  /* float: left; */
+  height: 46px;
+  width: 53px;
+}
+
+.speed-title-p3 {
+  float: right;
+  /* margin-left: -150px; */
+}
+
+.awd {
+  width: 350px;
+}
+
+/* Page 3 */
