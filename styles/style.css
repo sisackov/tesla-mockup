@@ -358,12 +358,13 @@ button {
 }
 
 .speedometer-p3 {
-  height: 46px;
-  width: 53px;
+  display: inline-block;
+  height: 26px;
+  width: 61px;
 }
 
 .speed-title-p3 {
-  float: right;
+  display: inline-block;
 }
 
 .awd {
