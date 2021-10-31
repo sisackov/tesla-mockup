@@ -225,6 +225,17 @@ button {
   color: black;
 }
 
+.down-arrow-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.down-arrow-container button {
+  border: none;
+  background: transparent;
+  color: white;
+}
+
 /* Page 2 */
 
 .side-article {
@@ -301,12 +312,6 @@ button {
 
 .up-arrow-container button {
   border: none;
-}
-
-.up-arrow-btn:active {
-  background-color: tomato;
-  /* TODO */
-  transform: translateY(-1000px);
 }
 
 .page-3 {
